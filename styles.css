@@ -1,0 +1,312 @@
+:root {
+    --primary-color:#0F1F00;
+    --msecondary-color: #EFEFEF; 
+  }
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    background-color: var(--primary-color);
+}
+
+/* Navigation */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    background-image: url('Media/Green-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.title-card {
+    max-height: 250px;
+    max-width: 100%;
+    position: relative;
+    top: -70px;
+}
+
+.nav {
+    height: 50px;
+    background-image: url('Media/beige-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    font-size: 1.7rem;
+}
+
+.nav ul {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: .2s ease-in-out;
+}
+
+a:hover {
+    color: var(--msecondary-color);
+}
+
+.nav ul li:hover {
+    background-color: var(--primary-color);
+    opacity: .9;
+}
+
+/* Video */
+
+.background-video {
+    display: flex;
+    max-width: 1800px;
+    width: 100%;
+    margin: auto
+}
+
+/* About */
+
+.about {
+    margin: auto;
+    padding: 20px;
+    max-width: 1800px;
+}
+
+.about-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.book-cover,
+.peter-jackson {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.book-cover img,
+.peter-jackson img {
+    width: 200px;
+    height: auto;
+}
+
+.about-text {
+    font-size: 1.6rem;
+    color: var(--msecondary-color);
+}
+
+/* Actors */
+
+.cast-title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--msecondary-color);
+    letter-spacing: 4px;
+    border-bottom: 1px solid var(--msecondary-color);
+    margin: 20px 10px;
+}
+
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    grid-row-gap: 10px;
+}
+
+.actor {
+    text-align: center;
+    color: var(--msecondary-color);
+}
+
+.actor img {
+    width: 80%;
+    max-width: 230px;
+    height: auto;
+    box-shadow: 2px 2px 2px #333;
+    border-radius: 5px;
+}
+
+.actor-name {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.character-name {
+    margin: 0;
+}
+
+/* Media  */
+
+
+.media-title {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--msecondary-color);
+    letter-spacing: 4px;
+    border-bottom: 1px solid var(--msecondary-color);
+    margin: 20px 10px;
+}
+
+.media-header {
+    background-image: url(Media/beige-bg.jpg);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.media-tab {
+    padding: 20px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    width: 33%;
+}
+
+.fas {
+    color: var(--primary-color);
+}
+
+.media-tab:hover {
+    opacity: .6;
+}
+
+.media-tab p {
+    font-size: 1.8rem;
+    margin: 5px;
+}
+
+/* Hide content initially  */
+.media-tab-content {
+    display: none;
+}
+
+.active {
+    border-bottom: 3px solid aqua;
+}
+
+.show {
+	display: flex !important;
+}
+
+.trailer-content-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.trailer-video {
+    margin: 20px;
+    width: 80%;
+}
+
+.photo-content-inner {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    text-align: center;
+}
+
+.photo-content-photo img {
+    width: 80%;
+    height: auto;
+    box-shadow: 2px 2px 2px #333;
+    border-radius: 5px;
+}
+
+.review-content-inner {
+    margin: 0px auto;
+    color: var(--msecondary-color);
+    font-size: 1.3rem;
+}
+
+.review-entry {
+    margin: 10px;
+    border-bottom: 1px solid var(--msecondary-color);
+}
+
+.review-author {
+    text-align: right;
+}
+
+.review-publication {
+    font-style: italic;
+}
+
+/* Footer  */
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: var(--msecondary-color);
+    height: 300px;
+    background-color: black;
+}
+
+.release-date {
+    width: 50%;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    padding: 20px 0px;
+    border-top: 2px solid var(--msecondary-color);
+    border-bottom: 2px solid var(--msecondary-color);
+}
+
+.footer-tags {
+    width: 95%;
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-between;
+}
+
+.ring {
+    width: 60px;
+    height: auto;
+}
+
+/* Media Queries */
+
+@media (min-width: 1100px) {
+    .about {
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .about-images {
+        margin-right: 10px;
+    }
+
+    .book-cover img,
+    .peter-jackson img {
+        width: 250px;
+    }
+    
+    .cast-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+
+    
+}
