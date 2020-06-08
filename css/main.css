@@ -313,6 +313,7 @@ a:hover {
     .book-cover img,
     .peter-jackson img {
         width: 250px;
+        max-height: 400px;
     }
     
     .cast-grid {
