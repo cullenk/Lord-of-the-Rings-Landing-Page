@@ -14,7 +14,6 @@ body {
     background-position: center;
     background-repeat: repeat;
     background-blend-mode: overlay;
-    
 }
 
 /* Navigation */
@@ -110,6 +109,9 @@ a:hover {
 .peter-jackson img {
     width: 200px;
     height: auto;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 12px black;
 }
 
 .about-text {
@@ -199,7 +201,6 @@ a:hover {
     margin: 5px;
 }
 
-/* Hide content initially  */
 .media-tab-content {
     display: none;
 }
@@ -250,7 +251,7 @@ a:hover {
 .review-entry {
     margin: 10px;
     max-width: 800px;
-    border-bottom: 1px solid var(--msecondary-color);
+    border-bottom: 1px solid gold;
 }
 
 .review-author {
